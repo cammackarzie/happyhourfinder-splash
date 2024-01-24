@@ -1,1 +1,55 @@
-<h1>Hello world!</h1>
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet"> 
+</head>
+
+<body class="bg-brand-black">
+    <header class="py-5 bg-brand-black">
+        <div class="container mx-auto px-5">
+            <a href="/" class="m-0 font-semibold text-2xl lg:text-3xl tracking-wide font-bebas text-brand-yellow">happyhourfinder<small>.co.uk</small></a>
+        </div>
+    </header>
+    <section class="bg-brand-black">
+        <div class="container mx-auto px-5">
+            <div class="pt-20 pb-16 text-center text-white">
+                <h1 class="mx-auto mb-8 text-6xl lg:text-8xl font-bebas">Find happy hour<br>deals <span class="text-brand-yellow">near you</span></h1>
+                <p class="text-base lg:text-xl text-slate-200 max-w-lg mx-auto">A community driven website dedicated to helping you find the best happy hour deals any day, any time.</p>
+                <p class="text-base lg:text-xl text-slate-200 underline mt-10">Launching spring 2024</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Nunito Sans', 'sans-serif'],
+                    bebas: ['Bebas Neue', 'sans-serif']
+                },
+                colors: {
+                    brand: {
+                        offwhite: '#ccc',
+                        white: '#eeeeee',
+                        gray: '#535d5d',
+                        yellow: '#f9db63',
+                        black: '#141616',
+                        olive: '#889b6e',
+                        pine: '#2c3f2b',
+                    },
+                }
+            }
+        }
+    }
+</script>
